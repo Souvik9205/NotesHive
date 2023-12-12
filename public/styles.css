@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  background-image: url("https://transparenttextures.com/patterns/brick-wall.png");
+  height: 100vh;
+  padding: 0 16px;
+}
+
+#root {
+  height: 100%;
+}
+
+header {
+  background-color: #43C59E;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 15px;
+}
+
+header h1 {
+  color: #14453D;
+  font-family: "McLaren", cursive;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #3D7068;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+  color: #14453D;
+}
+
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+.fab {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #14453D;
+  color: #14453D;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  float: right;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  flex: 1;
+  margin-top: 2.5px;
+  flex-basis: 20.33%;
+  background-color: #d8dddd;
+}
+
+.app {
+  height: 100vh;
+}
+
+.body {
+  flex: 8;
+  flex-basis: 100%; 
+}
+
+header button {
+  border: 2px solid #14453D;
+  background-color: #34bf95;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.option:hover:not(.highlighted) {
+  background-color: #ebeeee; 
+}
+
+.highlighted {
+  background-color: #3D7068; 
+}
+
+.options {
+  width: 100%;
+  border-top-right-radius: 20px; 
+  border-bottom-right-radius: 20px;
+  display: flex;
+  gap: 15px;
+}
